@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body {
+    margin: 0;
+    background-color: rgb(29, 29, 29);
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.container {
+    display: flex;
+    padding: 16px 8px;
+    font-size: 16px;
+    color: rgb(234, 227, 227);
+    margin: 10px 20px;
+}
+pre {
+    margin: 0;
+}
+#code-display {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.line-numbers {
+    font-family: monospace;
+    text-align: end;
+    margin-right: 16px;
+}
+textarea {
+    margin-left: 16px;
+    width: 100%;
+    padding: 0;
+    min-height: calc(100vh - 36px);
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background-color: rgb(29, 29, 29);
+    color: rgb(234, 227, 227);
+}
+
+.buttons-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 170px;
+}
+.logo {
+    font-size: 37px;
+    font-family: 'Permanent Marker', cursive;
+    text-decoration: none;
+    color: rgb(175, 174, 171);
+}
+.logo-div {
+    background-color: black;
+    text-align: center;
+}
+.buttons-div {
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(18, 17, 17);
+}
+.buttons-div > * + * {
+    margin-left: 10px;
+}
+i {
+    color: rgb(206, 199, 199);
+}
+.btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
