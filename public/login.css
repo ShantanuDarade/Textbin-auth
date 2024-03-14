@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ededed; /* Changed background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+.logo h2 {
+    font-size: 37px;
+    margin: 15px;
+    width: 40%;
+    font-family: 'Permanent Marker', cursive;
+    text-decoration: none;
+    color: rgb(175, 174, 171);
+    background-color: black;
+}
+
+.form-container {
+    padding: 0 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Changed border color */
+    border-radius: 4px;
+    outline: none;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #333; /* Changed label color */
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: #232f3e; /* Changed button background color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #17324d; /* Changed button hover color */
+}
+
+.forgot-password {
+    text-align: right;
+    margin-top: 10px;
+    color: #333; /* Changed link color */
+    font-size: 14px;
+}
+
+.create-account {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.create-account a {
+    color: #333; /* Changed link color */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.create-account a:hover {
+    text-decoration: underline;
+}

@@ -18,10 +18,14 @@ pre {
     margin: 0;
 }
 #code-display {
+    position: relative;
+    left: 30px;
     padding-top: 0;
     padding-bottom: 0;
 }
 .line-numbers {
+    position: relative;
+    left: 30px;
     font-family: monospace;
     text-align: end;
     margin-right: 16px;

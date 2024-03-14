@@ -10,6 +10,9 @@
 <body>
     <%- include('buttons.ejs', { id: locals.id})%>
     <div class="container">
+        <%- include('sidebar.ejs',{links})%>
+
+        
         <div class="line-numbers">
             <% for (let i = 1; i <= code.split('\n').length; i++) { %>
                 <div><%= i %></div>

@@ -1,0 +1,63 @@
+/* @import url("https://fonts.googleapis.com/"); */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+.sidebar{
+    position: fixed;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #042331;
+    transition: all .5s ease;
+    z-index: 1;
+}
+.sidebar header{
+    font-size: 22px;
+    line-height: 70px;
+    padding-left: 35px;
+    user-select: none;
+}
+.sidebar ul li {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 35px;
+    font-size: 18px;
+    padding-left: 35px;
+}
+#check {
+    display: none;
+}
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+}
+label #btn{
+    left: 10px;
+    top: 15px;
+    font-size: 30px;
+    padding: 6px 12px;
+}
+label #cancel{
+    z-index: 1111;
+    left: -245px;
+    top: 44px;
+    font-size: 30px;
+    transition: all .45s ease;
+}
+#check:checked ~ .sidebar{
+    left:0
+}
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    left: 245px;
+}

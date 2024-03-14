@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="/sidebar.css">
+
+<% if (links.length > 0) { %>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header>My Links</header>
+        <ul>
+            <% links.forEach((link) => { %>
+                <li><%= link._id %></li>
+            <% }) %>
+        </ul>
+    </div>
+<% } %>
